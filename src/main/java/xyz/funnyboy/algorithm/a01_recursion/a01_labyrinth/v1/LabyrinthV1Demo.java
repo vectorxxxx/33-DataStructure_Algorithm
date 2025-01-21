@@ -1,4 +1,4 @@
-package xyz.funnyboy.algorithm.a01_recursion.labyrinth.v1;
+package xyz.funnyboy.algorithm.a01_recursion.a01_labyrinth.v1;
 
 /**
  * @author VectorX
