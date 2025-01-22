@@ -141,7 +141,7 @@ public class LabyrinthV2
 	public void showMaze() {
 		for (int i = 0; i < maze.length; i++) {
 			for (int j = 0; j < maze[i].length; j++) {
-				System.out.printf("%d\t", maze[i][j]);
+				System.out.printf("%s\t", LabyrinthEnum.getSymbol(maze[i][j]));
 			}
 			System.out.println();
 		}
@@ -202,7 +202,7 @@ public class LabyrinthV2
 
 		// 来时路
 		if (maze[y][x] != LabyrinthEnum.START.getCode()) {
-			maze[y][x]++;
+			maze[y][x] = LabyrinthEnum.TRACE.getCode();
 		}
 		return false;
 	}
