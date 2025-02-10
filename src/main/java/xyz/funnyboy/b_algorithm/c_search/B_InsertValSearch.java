@@ -13,18 +13,18 @@ public class B_InsertValSearch
 	}
 
 	private static int insertValSearch(int[] arr, int left, int right, int finalVal) {
-		if (left > right || finalVal < arr[left] || finalVal > arr[right]) {
+		if (left > right || finalVal < arr[0] || finalVal > arr[arr.length - 1]) {
 			return -1;
 		}
 
 		int mid = left + (right - left) * (finalVal - arr[left]) / (arr[right] - arr[left]);
 		int midVal = arr[mid];
 
-		if (midVal > finalVal) {
-			return insertValSearch(arr, left, mid - 1, finalVal);
-		}
-		else if (midVal < finalVal) {
+		if (finalVal > midVal) {
 			return insertValSearch(arr, mid + 1, right, finalVal);
+		}
+		else if (finalVal < midVal) {
+			return insertValSearch(arr, left, mid - 1, finalVal);
 		}
 		else {
 			return mid;
