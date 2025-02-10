@@ -3,7 +3,7 @@ package xyz.funnyboy.a_datastructure.f_tree.b_arrbinarytree;
 /**
  * @author VectorX
  * @version V1.0
- * @description
+ * @description 顺序存储二叉树
  * @date 2025-02-10 16:34:58
  */
 public class ArrBinaryTree

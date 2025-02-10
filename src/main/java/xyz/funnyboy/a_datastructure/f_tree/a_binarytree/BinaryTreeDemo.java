@@ -27,6 +27,13 @@ public class BinaryTreeDemo
 		node3.left(node5);
 		binaryTree.setRoot(root);
 
+		System.out.println("=======前序查找=======");
+		binaryTree.preOrderSearch(5); // 4次
+		System.out.println("=======中序查找=======");
+		binaryTree.inOrderSearch(5);      // 3次
+		System.out.println("=======后序查找=======");
+		binaryTree.postOrderSearch(5);// 2次
+
 		System.out.println("删除前");
 		System.out.println("=======前序遍历=======");
 		binaryTree.preOrderTraversal(); // 1,2,3,5,4
