@@ -25,13 +25,14 @@ public class SortDemo
 		// A04_ShellSort.sort(arr);
 		// A05_QuickSort.sort(arr);
 		// F_MergerSort.sort(arr);
-		G_RadixSort.sort(arr);
+		// G_RadixSort.sort(arr);
+		H_HeapSort.sort(arr);
 		System.out.println(MessageFormat.format("排序后：{0}", Arrays.toString(arr)));
 	}
 
 	private static void test2() {
-		final int size = 80000;
-		// final int size = 8000000;
+		// final int size = 80000;
+		final int size = 8000000;
 		int[] arr = new int[size];
 		for (int i = 0; i < size; i++) {
 			arr[i] = (int) (Math.random() * 8000000);
@@ -45,7 +46,8 @@ public class SortDemo
 		// A04_ShellSort.sort(arr);
 		// A05_QuickSort.sort(arr);
 		// F_MergerSort.sort(arr);
-		G_RadixSort.sort(arr);
+		// G_RadixSort.sort(arr);
+		H_HeapSort.sort(arr);
 		final long end = System.currentTimeMillis();
 		// System.out.println(MessageFormat.format("排序后：{0}", Arrays.toString(arr)));
 
@@ -58,6 +60,7 @@ public class SortDemo
 		// 快速排序耗时：        13ms     |  809ms
 		// 归并排序耗时：        16ms     |  1,038ms
 		// 基数排序耗时：        8ms      |  278ms
+		// 堆排序耗时：          10ms     |  1,649ms
 		System.out.println(MessageFormat.format("排序耗时：{0}ms", end - start));
 	}
 
