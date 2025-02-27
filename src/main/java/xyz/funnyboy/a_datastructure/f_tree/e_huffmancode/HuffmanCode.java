@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * @author VectorX
  * @version V1.0
- * @description
+ * @description 赫夫曼编码
  * @date 2025-02-21 11:25:32
  */
 public class HuffmanCode

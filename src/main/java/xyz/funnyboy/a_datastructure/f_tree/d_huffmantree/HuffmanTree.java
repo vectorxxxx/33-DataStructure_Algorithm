@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author VectorX
  * @version V1.0
- * @description
+ * @description 赫夫曼树
  * @date 2025-02-17 15:21:46
  */
 public class HuffmanTree

@@ -3,7 +3,7 @@ package xyz.funnyboy.a_datastructure.f_tree.c_threadedbinarytree;
 /**
  * @author VectorX
  * @version V1.0
- * @description 二叉树
+ * @description 线索化二叉树
  * @date 2025-02-10 16:17:42
  */
 public class ThreadedBinaryTree
