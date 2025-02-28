@@ -22,7 +22,8 @@ public class SearchDemo
 		for (int num : arr) {
 			// final int index = A_BinarySearch.search(arr, num);
 			// final int index = B_InsertValSearch.search(arr, num);
-			final int index = C_FibonacciSearch.search(arr, num);
+			// final int index = C_FibonacciSearch.search(arr, num);
+			final int index = A_BinarySearch_NoRecur.search(arr, num);
 			System.out.print(index + "\t");
 		}
 		System.out.println();
@@ -43,13 +44,15 @@ public class SearchDemo
 		final long start = System.currentTimeMillis();
 		final int randomIndex = new Random().nextInt(size);
 		// final int searchedIndex = A_BinarySearch.search(arr, arr[randomIndex]);
-		final int searchedIndex = C_FibonacciSearch.search(arr, arr[randomIndex]);
+		// final int searchedIndex = C_FibonacciSearch.search(arr, arr[randomIndex]);
+		final int searchedIndex = A_BinarySearch_NoRecur.search(arr, arr[randomIndex]);
 		System.out.println(MessageFormat.format("随机索引：{0}，查询到的索引：{1}", randomIndex, searchedIndex));
 		final long end = System.currentTimeMillis();
 
-		//            80000   | 8000000
-		// 二分法查找耗时：  25ms   |  30ms
-		// 斐波那契查找耗时： 26ms   |  35ms
+		//                      80000   | 8000000
+		// 二分法查找（递归）耗时：   25ms   |  30ms
+		// 二分法查找（非递归）耗时： 21ms   |  29ms
+		// 斐波那契查找耗时：        26ms   |  35ms
 		System.out.println(MessageFormat.format("查询耗时：{0}ms", end - start));
 	}
 
