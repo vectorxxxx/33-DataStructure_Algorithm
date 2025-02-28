@@ -3,7 +3,7 @@ package xyz.funnyboy.b_algorithm.c_search;
 /**
  * @author VectorX
  * @version V1.0
- * @description
+ * @description 二分搜索（非递归）
  * @date 2025-02-28 15:38:38
  */
 public class A_BinarySearch_NoRecur

@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 /**
  * @author VectorX
  * @version V1.0
- * @description
+ * @description 图的深度优先遍历、广度优先遍历
  * @date 2025-02-28 10:54:26
  */
 public class Graph
